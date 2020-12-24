@@ -9,9 +9,8 @@ export class FileLoggerWeb extends WebPlugin implements FileLoggerPlugin {
     });
   }
 
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async log(options: { level: string, message: string, data: object }): Promise<void> {
+    console.log(options);
   }
 }
 
