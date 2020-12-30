@@ -6,4 +6,5 @@ declare module '@capacitor/core' {
 
 export interface FileLoggerPlugin {
   log(options: { level: string, message: string, data: object }): Promise<void>;
+  getLogDirectory(): Promise<{ path: string }>;
 }

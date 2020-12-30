@@ -5,4 +5,5 @@
 // each method the plugin supports using the CAP_PLUGIN_METHOD macro.
 CAP_PLUGIN(FileLogger, "FileLogger",
            CAP_PLUGIN_METHOD(log, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(getLogDirectory, CAPPluginReturnPromise);
 )
