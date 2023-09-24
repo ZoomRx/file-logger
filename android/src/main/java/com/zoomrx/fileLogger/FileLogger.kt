@@ -1,4 +1,4 @@
-package com.zoomrx.plugins.fileLogger
+package com.zoomrx.fileLogger
 
 import android.util.Log
 
